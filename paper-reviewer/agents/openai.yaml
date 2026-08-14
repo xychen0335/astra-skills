@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Reviewer"
+  short_description: "生成结构化中文论文审稿意见模板"
+  default_prompt: "Use $paper-reviewer to draft structured Chinese peer-review comments for this paper."

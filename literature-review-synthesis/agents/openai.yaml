@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Review Synthesis"
+  short_description: "分类整理论文并抽取可写入综述的观点"
+  default_prompt: "Use $literature-review-synthesis to classify these papers and extract literature-review claims from their PDFs or links."
