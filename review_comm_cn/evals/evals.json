@@ -1,0 +1,23 @@
+{
+  "skill_name": "review_comm_cn",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "请对附件中的这篇通信类 PDF 论文写中文审稿意见，按通信期刊审稿格式输出。",
+      "expected_output": "包含 # Review_ 标题、开篇场景与创新总结、优点嵌入、过渡句「本文存在几点问题。」、5–10 条编号问题",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我审一下这篇水声/传感器网络相关的 pdf，列出主要问题和优点，中文写。",
+      "expected_output": "触发 review_comm_cn，读取 PDF，输出与 example_review 体例一致的中文审稿",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "这是投期刊的稿子（pdf），请从实验设计、图表和贡献一致性几个方面给审稿意见，保存为 md。",
+      "expected_output": "覆盖实验不完整、图表混乱、贡献冲突等类别，并保存 Review_*.md",
+      "files": []
+    }
+  ]
+}
