@@ -1,22 +1,34 @@
 {
-  "skill_name": "review_comm_cn",
+  "skill_name": "review-comm-cn",
   "evals": [
     {
       "id": 1,
       "prompt": "请对附件中的这篇通信类 PDF 论文写中文审稿意见，按通信期刊审稿格式输出。",
-      "expected_output": "包含 # Review_ 标题、开篇场景与创新总结、优点嵌入、过渡句「本文存在几点问题。」、5–10 条编号问题",
+      "expected_output": "包含 ## 致编辑部（读者不可见）、# Review_ 标题、开篇场景与创新总结、过渡句「本文存在几点问题。」、5–10 条编号问题",
       "files": []
     },
     {
       "id": 2,
       "prompt": "帮我审一下这篇水声/传感器网络相关的 pdf，列出主要问题和优点，中文写。",
-      "expected_output": "触发 review_comm_cn，读取 PDF，输出与 example_review 体例一致的中文审稿",
+      "expected_output": "触发 review-comm-cn，读取 PDF，输出与 example_review 体例一致的中文审稿（含致编辑部节）",
       "files": []
     },
     {
       "id": 3,
       "prompt": "这是投期刊的稿子（pdf），请从实验设计、图表和贡献一致性几个方面给审稿意见，保存为 md。",
       "expected_output": "覆盖实验不完整、图表混乱、贡献冲突等类别，并保存 Review_*.md",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "这是修回稿 pdf，附件是上一轮的审稿意见 md，请复审：结合修改稿和作者改动写一段总结，再写仍存在的问题。",
+      "expected_output": "复审模式：致编辑部 + 开篇 + 主题式修改情况总结段（非逐条回应）+ 「本文仍存在几点问题。」+ 5–10 条问题",
+      "files": []
+    },
+    {
+      "id": 5,
+      "prompt": "/review-comm-cn 审稿 8482_P_editing.pdf，另外附上 Review_上一轮.md 作为此前意见",
+      "expected_output": "skill 名称 review-comm-cn 触发；输入 PDF + 此前 Review；输出含编辑部宏观摘要",
       "files": []
     }
   ]

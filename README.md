@@ -8,6 +8,7 @@
 astra-skills/
 ├── literature-review-synthesis/   # 批量论文阅读与综述写作
 ├── paper-reviewer/                # 结构化中文审稿意见生成
+├── review-comm-cn/                # 通信类中文审稿（初审/修回、致编辑部摘要）
 ├── photo-style-router-v1/         # 照片转插画（动漫/线稿/赛博朋克/古风）
 ├── ds-codex/                      # 委托 codex CLI 处理图像与代码审查
 ├── scripts/
@@ -21,6 +22,7 @@ astra-skills/
 |---|---|
 | `literature-review-synthesis` | 从 PDF、论文链接、标题/摘要等批量提取论点，生成文献综述 |
 | `paper-reviewer` | 为论文/稿件生成结构化中文审稿意见（优点 + 5-6 条不足） |
+| `review-comm-cn` | 通信/信息类中文审稿：PDF 输入，含致编辑部摘要；支持附此前意见做修回复审 |
 | `photo-style-router-v1` | 照片转插画，支持动漫风、极简线稿、赛博朋克、中国古风四种风格 |
 | `ds-codex` | 将图像理解、扫描件处理等非文本任务及代码审查委托给 codex CLI |
 
