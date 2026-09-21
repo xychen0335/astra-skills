@@ -1,0 +1,4 @@
+interface:
+  display_name: "Astra 技术博客写作"
+  short_description: "按中文技术博客风格撰写论文解读与工程实践，沿执行过程讲清机制"
+  default_prompt: "使用 $astra-blog-writing，根据提供的材料撰写或重写中文技术博客，从具体问题出发，沿机制与执行流程展开。"
